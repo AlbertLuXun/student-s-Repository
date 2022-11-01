@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>访客调研</title>
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/form.css">
+</head>
+	
+<body style="text-align: center;">
+    <nav>
+        <div class="navtitle"><strong>李明骏</strong>|MY PROFILE</div>
+        <a href="home.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="blog.html">博客</a>
+        <a href="album.html">影集</a>
+        <a href="join.html">联系与加入</a>
+        <div class="navanim home"></div>
+        <div class="none"></div>
+    </nav>
+<div class="mid">
+	<div class="headimg">
+    	<h1>访客调研</h1>
+    </div>
+	<div class="from">
+		<form  method="post" action="URL" onSubmit="return check()">
+        	<ol>
+            	<li>您的教育程度是？</li>
+                   <label> <input type="radio" name="0" >高中 </label>
+                   <label> <input type="radio" name="0" >大专 </label>
+                   <label> <input type="radio" name="0" >本科 </label>
+                   <label> <input type="radio" name="0" >硕士研究生 </label>
+                   <label> <input type="radio" name="0" >博士及以上 </label>
+				<li>您的性别是？</li>
+					<label> <input type="radio" name="1" >男 </label>
+					<label> <input type="radio" name="1" >女 </label>
+					<label> <input type="radio" name="1" >保密 </label>
+                <li>您的年龄段是？</li>
+                	<label> <input type="radio" name="2" >18岁以下 </label>
+                    <label> <input type="radio" name="2" >18-25岁 </label>
+                    <label> <input type="radio" name="2" >26-30岁 </label>
+                    <label> <input type="radio" name="2" >31-35岁 </label>
+                    <label> <input type="radio" name="2" >35岁以上 </label>
+                <li>您是否了解网页设计（可多选）</li>
+                	<label> <input type="checkbox"  name="q3">是 </label>
+                    <label> <input type="checkbox"  name="q3">否 </label>
+                <li>您了解以下哪些代码语言？（可多选）</li>
+                	<label> <input type="checkbox"  name="q4">html </label><br/>
+                    <label> <input type="checkbox"  name="q4">JavaScript </label><br/>
+                    <label> <input type="checkbox"  name="q4">java </label><br/>
+                    <label> <input type="checkbox"  name="q4">python </label><br/>
+                    <label> <input type="checkbox"  name="q4">以上均不了解 </label><br/>
+				    <label> <input type="checkbox"  name="q4">非计算机从业人员 </label><br/>
+				<li>您是否喜爱您的专业，工作，以及生活。</li>
+					<label> <input type="radio"  name="q5">喜欢 </label><br/>
+				    <label> <input type="radio"  name="q5">讨厌 </label><br/>
+					<label> <input type="radio"  name="q5">说不上 </label><br/>
+					<label> <input type="radio"  name="q5">随缘 </label><br/>
+			</ol>
+            <label>您的姓名<input type="text" name="name"  required></label>
+            <label>您的职业<input type="text" name="position"  required></label>
+            <label>联系电话<input type="tel" name="tel"  required></label>
+            <button type="submit">提交问卷</button>
+		</form>
+		<script src="../js/form.js"></script>
+	</div>
+</div>
+<div class="title">
+	[请]<br>
+时刻对自身充满自信<br>
+时刻对生活保持乐观<br>
+要活在自己的热爱里<br>
+而不是别人的眼光里
+</div>
+<video width="80%" controls>
+	<source src="../video/video1.mp4">
+	您的浏览器不支持 HTML video标签！
+	</video>
+    <footer class="foot">
+            <p>@2022-至今  |  BY:LMJ</p>
+            <p>&copy;网页版权归20级计算机应用一班李明骏所有</p>
+			<p>本人并未配置php运行环境，表单提交后会出现{"code":"MethodNotAllowedError","message":"POST is not allowed"}</p>
+    </footer>
+</body>
+</html>

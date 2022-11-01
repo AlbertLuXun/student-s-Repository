@@ -1,0 +1,27 @@
+@charset "gb2312";
+body {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+	color: #333;
+	background-image: url(../images/dh_15.png);
+	margin: 0px;
+	background-position: center;
+}
+.t1 {
+	font-size: 12px;
+	color: #655709;
+	font-weight: bold;
+}
+a:link {
+	color: #544807;
+	text-decoration: none;
+}
+a:visited {
+	color: #996600;
+	text-decoration: none;
+}
+a:hover {
+	color: #352E04;
+	text-decoration: underline;
+}

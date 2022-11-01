@@ -1,0 +1,145 @@
+@charset "utf-8";
+.mid{
+    height: 180vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.headimg{
+    top: 0px;
+    height: 250px;
+    width: 100%;
+    background-image: url("../image/headimg2.jpg");
+    background-size: 1540px;
+    background-repeat: no-repeat;  /*无重复*/
+    background-position-y: -540px;/*定位操作*/
+    background-position-x: 0px;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(58, 83, 85);/*下边框*/
+    animation: headload 0.9s linear; /*css动画*/
+}
+.headimg h1{
+    color: rgba(190,201,208,1.00);
+    font-size: 5em;
+    text-align: center;
+    line-height: 200px;
+}
+
+.mid .ab{
+    width: 800px;
+    height: 300px;
+    box-shadow: 0 0 15px rgb(83, 103, 110); /*盒阴影*/
+    background: rgba(71, 142, 175, 0.2); /*透明背景*/
+    border-radius: 15px;
+    backdrop-filter: blur(5px); /*毛玻璃滤镜*/
+    display: flex;  /*溢出*/
+    overflow: hidden;   /*限制字体无法超出盒子从而无法改变盒体大小*/
+    margin-top: 40px;
+}
+.a1 .img{
+    background-image: url("../image/about1.jpg");
+}
+.a2 .img{
+    background-image: url("../image/about2.jpg");
+}
+.a3 .img{
+    background-image: url("../image/about3.jpg");
+}
+
+.ab p{
+    word-wrap: break-word;
+    color: rgb(41, 68, 68);
+    line-height: 24px;
+}
+
+.ab .txt{
+    width: 400px;
+    margin: 0 50px 0 50px;
+}
+.ab h2{
+    text-align: center;
+    color: rgb(51, 86, 114);
+}
+.ab .img{
+    width: 300px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.3);/*降色滤镜*/
+    opacity: 0.8;/*不透明度*/
+    transition: all 0.5s ease 0s;/*变换*//*不太会用*/
+}
+.ab .img:hover{/*伪类*/
+    transform: scale(1.1);/*膨大操作*/
+}
+.ab .imghid{
+    overflow: hidden;/*溢出*/
+}
+.a1{
+    margin-left: 40%;
+    animation: a1load 2.5s linear;  /*css动画*/
+    transition: 0.5s  1s;/*过渡效果*/
+}
+.a2{
+    margin-left: 10%;
+    animation: a2load 3.6s linear;
+    transition: 0.5s;
+}
+.a3{
+    margin-left: 40%;
+    animation: a3load 4.8s linear;
+    transition: 0.5s;
+}
+.a3 h2{
+    margin-top: 100px;
+    line-height: 50px;
+}
+
+@keyframes a1load{/*关键帧定义*/
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+@keyframes a2load{
+    0%{
+        
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes a3load{
+    0%{
+        
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes headload{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 240px;
+    }
+}

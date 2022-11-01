@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link href="../style/s1.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.STYLE1 {color: #FFFFFF}
+-->
+</style>
+</head>
+
+<body onload="MM_preloadImages('images/dhh_05.png','images/dhh_06.png','images/dhh_07.png','images/dhh_08.png','images/dhh_09.png','images/dhh_10.png','images/dhh_11.png')">
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../images/dh_01.png" width="1000" height="21" /></td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="156"><img src="../images/dh_02.png" width="156" height="61" /></td>
+    <td width="40" background="../images/2_03.png">&nbsp;</td>
+    <td valign="bottom" background="../images/2_03.png"><table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','dh1','',1)" onmouseover="MM_nbGroup('over','dh1','images/dhh_05.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../images/dh_05.png" alt="" name="dh1" width="62" height="45" border="0" id="dh1" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','dh2','',1)" onmouseover="MM_nbGroup('over','dh2','images/dhh_06.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../images/dh_06.png" alt="" name="dh2" width="102" height="45" border="0" id="dh2" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','dh3','',1)" onmouseover="MM_nbGroup('over','dh3','images/dhh_07.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../images/dh_07.png" alt="" name="dh3" width="90" height="45" border="0" id="dh3" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','dh08','',1)" onmouseover="MM_nbGroup('over','dh08','images/dhh_08.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../images/dh_08.png" alt="" name="dh08" width="118" height="45" border="0" id="dh08" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','dh09','',1)" onmouseover="MM_nbGroup('over','dh09','images/dhh_09.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../images/dh_09.png" alt="" name="dh09" width="90" height="45" border="0" id="dh09" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','dh10','',1)" onmouseover="MM_nbGroup('over','dh10','images/dhh_10.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../images/dh_10.png" alt="" name="dh10" width="89" height="45" border="0" id="dh10" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','dh11','',1)" onmouseover="MM_nbGroup('over','dh11','images/dhh_11.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../images/dh_11.png" alt="" name="dh11" width="120" height="45" border="0" id="dh11" onload="" /></a></td>
+      </tr>
+    </table></td>
+    <td width="80" background="../images/2_03.png">&nbsp;</td>
+    <td width="7">&nbsp;</td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="40">&nbsp;</td>
+    <td height="30" valign="middle">首页&gt;汽车展厅&gt;买肯抠两厢</td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="12">&nbsp;</td>
+    <td width="150" valign="top"><table width="150" height="140" border="0" cellpadding="0" cellspacing="0" background="../images/left.png">
+      <tr>
+        <td height="30" colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="15">&nbsp;</td>
+        <td height="24" valign="middle"><a href="#">走近买肯抠</a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24" valign="middle"><a href="#">接待中心</a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24" valign="middle"><a href="#">汽车展厅</a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="30" valign="top"><a href="#">客户服务</a></td>
+      </tr>
+    </table>
+<table width="150" height="140" border="0" cellpadding="0" cellspacing="0" background="../images/left1.png">
+          <tr>
+            <td height="30" colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="15">&nbsp;</td>
+            <td height="24" valign="middle"><a href="#">汽车展厅</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td height="24" valign="middle"><a href="#">车型对比</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td height="24" valign="middle"><a href="#">预约试驾</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td height="30" valign="top"><a href="#">索取产品手册</a></td>
+          </tr>
+        </table>
+      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><img src="../images/l1.jpg" width="150" height="35" /></td>
+          </tr>
+          <tr>
+            <td><img src="../images/l2.jpg" width="150" height="35" /></td>
+        </tr>
+          <tr>
+            <td><img src="../images/l3.jpg" width="150" height="35" /></td>
+        </tr>
+          <tr>
+            <td><img src="../images/l4.jpg" width="150" height="35" /></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+    <td valign="top"><!-- TemplateBeginEditable name="EditRegion3" -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="55%">&nbsp;</td>
+          <td width="45%"><br /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><p>&nbsp;</p>
+            <blockquote>
+              <p><br />
+                </p>
+              </blockquote>
+            <p><br />
+            </p></td>
+        </tr>
+      </table>
+    <!-- TemplateEndEditable --></td>
+    <td width="7">&nbsp;</td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="40" background="../images/bottom.png"><div align="center" class="STYLE1 STYLE1">&copy;2008买肯抠汽车（中国）有限公司 版权所有 京ICP备05031283号</div></td>
+  </tr>
+</table>
+</body>
+</html>

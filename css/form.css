@@ -1,0 +1,96 @@
+@charset "utf-8";
+.mid{
+    height: 180vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.headimg{
+    top: 0px;
+    height: 250px;
+    width: 100%;
+    background-image: url("../image/headimg2.jpg");
+    background-size: 1540px;
+    background-repeat: no-repeat;
+    background-position-y: -540px;
+    background-position-x: 0px;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(58, 83, 85);
+    animation: headload 0.9s linear;
+}
+.headimg h1{
+    color: rgba(190,201,208,1.00);
+    font-size: 5em;
+    text-align: center;
+    line-height: 200px;
+}
+.from{
+	margin: 80px auto 0px;
+	background: rgba(71, 142, 175, 0.2);
+	backdrop-filter: blur(5px);
+	color: rgba(255,255,255,1.00);
+	width:600px;
+	font-family:"微软雅黑";
+    animation: fromload 2.5s linear;
+    transition: 0.5s  1s;
+}	
+.from hr{
+	width:80%;
+	border:1px solid  #09F ;
+	margin-top:-5px;
+}
+.from input{
+	margin:10px;
+}
+.from li{
+	margin:10px;
+}
+.from input[type="text"] ,input[type="tel"]
+{
+	width:100px;
+	border:0px;
+	border-bottom:1px solid;	
+}
+	
+.from button{
+	background:#09F;
+	color:white;
+	width:100px;
+	height:40px;
+	font-size:16px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+	margin:5% 39%;
+} 
+.from button:hover{
+	background:#0CF;
+}
+.title{
+    width: 1540px;
+	margin-bottom: 200px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgba(234,247,255,1.00);
+}
+
+@keyframes fromload{ 
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+@keyframes headload{ 
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 240px;
+    }
+}

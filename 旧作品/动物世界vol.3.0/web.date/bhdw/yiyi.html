@@ -1,0 +1,446 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/导航.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="编辑2" -->
+<style>
+	body{
+    padding: 0;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 15px;
+    color: #000000;
+	}/*body样式，已核对*/
+	.bj{
+		width: 100%;
+		height: 40px;
+		background-color:#00DBFF;
+	}/*背景，已核对*/
+	.banner{
+		width: 100%;
+		height: 800px;
+		background-color: aqua;
+		display: none;
+	}/*背景层，已核对，已关闭*/
+	
+	
+	.nav{
+		width: 350px;
+		height: 40px;
+		margin: 0 auto;
+		padding: 0;
+	}/*框，已核对*/
+	.nav li{
+		list-style: none;
+		width: 70px;
+		height: 40px;
+		float: left;
+		text-align: center;
+		line-height: 40px;
+		position: relative;/*绝对定位索引*/
+		z-index: 99;/*字体显示*/
+	}/*标签样式*/
+	.nav li::before {
+		content: " ";
+		width: 68px;
+		height: 28px;
+		background-color: #2655DA;
+		border-radius: 14px;
+		position: absolute;/*绝对定位*/
+		top: 6px;
+		left: 1px;
+		z-index: -99;/*字体显示*/
+		display: none;
+	}/*标签触发底纹*/
+	.nav li:hover::before{
+		display: block;
+	}/*鼠标触发*/
+	.nav li:hover{
+		color: #fff;
+	}/*鼠标触发字体色*/ /*nav li标签全部核对完毕*/
+	.nav li:hover .tanchuang{
+		display: block;
+	}/*弹窗触发，已核对*/
+	
+	
+	.tanchuang{
+		width:450px;
+		height: 148px;
+		background-color: #FFFFFF;
+		float: left;
+		color: #333;
+		display: none;
+	}/*弹窗，已核对*/
+	
+	
+	.top{
+		width: 100%;
+		height: 45px;
+		border-bottom: 1px solid #e8e8e8;/*一级标题框下划线 */
+	}/*小标题，已核对*/
+	.top p{
+		float: left;
+		font-size: 14px;
+		margin: 0 0 0 15px;
+	}/*小标题字体样式，已核对*/
+	.top p span{
+		font-size: 12px;
+		color: #999999;
+		margin-left: 22px;
+	}/*小标题尾语，已核对*/
+	
+	
+	.but{
+		float: right;
+		width: 100px;
+		height: 30px;
+		border-radius: 3px;
+		color: #ffffff;
+		text-align: center;
+		line-height: 30px;
+		font-size: 14px;
+		background-color:#0088FF;
+		margin: 7px 15px 0 0;
+		cursor: pointer
+	}/*右浮动调研问卷导向，已核对*/
+	.but a{
+		color: #000000;
+		text-decoration: none;
+	}/*调研问卷字体，已核对*/
+	.nav li a{
+		text-decoration: none;
+		color: #000000;
+	}/*调研问卷字体、2，已核对*/
+	
+	
+	.content{
+		width: 100%;
+		height: 102px;
+	}/*二级标题框，已核对*/
+	.left{
+		float: left;
+		width: 60px;
+		text-align: center;
+		font-size: 12px;
+		color: #333;
+	}/*二级标题，已核对*/
+	
+	
+	.right{
+		float: left;
+		width: 390px;
+		padding-top: 7px;
+	}/*二级内容，已核对*/
+	.right span{
+		float: left;
+		height: 26px;
+		line-height: 26px;
+		margin-left: 20px;
+		color:#;
+		position: relative;
+		padding: 0 5px;
+		cursor: pointer;
+	}/*二级内容标签，已核对*/
+	.right span:first-child::before{
+		content: "";
+		width: 1px;
+		height: 12px;
+		background-color: #e8e8e8;
+		position: absolute;
+		top: 7px;
+		left: -10px;
+	}/*二级标题内容分割线，已核对*/
+	.right span:hover{
+		content: "";
+		width: auto;
+		height: 26px;
+		border-radius: 13px;
+		background-color: #f8f8f8;
+		color: aqua;
+	}/*二级标签触发背景，已核对*/
+/*-----------------------------------------------------------------------------------------------*/
+	.tittel{
+		width: 631px;
+		text-align: center;
+		font-size: 32px;
+		font-family: '微软雅黑';
+		font-weight: bold;
+		margin: 0 auto;
+		/*
+		background: url("../img/标题签修改后.jpg");
+		background-repeat: no-repeat;
+		background-position: 0 50%;
+		                                       */
+		background: url("../img/主页/标题签完全体.jpg") no-repeat 0 50%;
+	}/*通用标题，已核对*/
+	
+	.callwe{
+		width: 100%;
+		height: 424px;
+		padding-top: 36px;
+	}/*联系我们盒子*/
+	.callwebox{
+		width: 1020px;
+		height: 414px;
+		margin: 22px auto 0;
+		background-color: #f5f5f5;
+	}/*cw内联*/
+	.callwebox div{
+		width: 33%;
+		height: 95%;
+		float: left;
+	}/*三盒*/
+	.callwebox div img{
+		display: block;
+		margin: 54px auto 0;
+	}/*图片*/
+	.callwebox div p{
+		font-size: 30px;
+		font-family: "Arial";
+		color: #999999;
+		text-align: center;
+		margin: 20px 0 12px;
+	}/*小标题*/
+	.callwebox div span{
+		display: block;
+		font-size: 20px;
+		color: #333333;
+		margin: 0 auto;
+		text-align: center
+	}/*字体*/ /*callwebox单盒全部已核对*/
+	
+	.zhici{
+		width: 1020px;
+		height: 40px;
+		margin: 0 auto;
+		background-color: #f5f5f5;
+	}
+	.zhici p{margin: auto}/*致辞居中，已核对*/
+	
+/*----------------------------------------------收尾----------------------------------------------*/
+	
+	.fenge{margin: 100px auto 0}
+	.fenge p{float: right}
+	
+/*----------------------------------------------收尾----------------------------------------------*/
+	.kuang{
+		width: 100%;
+		height: 400px;
+		margin: 50px auto;
+	}
+	.smallbj{
+		width: 75%;
+		margin: auto;
+		padding: 20px 25px;
+	}
+	.shiyi{
+		
+	}
+	.TXT{
+		width: 74%;
+		height: 220px;
+		margin: auto;
+		font-family: '微软雅黑';
+		font-size: 36px;
+		float: left;
+		font-weight: 400;
+	}
+	.TXT span{
+		font-size: 18px;
+		font-family: "微软雅黑";
+		float: left;
+		text-indent: 36px;
+		line-height: 36px;
+	}
+	.tp{
+		width: 24%;
+		margin: auto;
+		float: right;
+	}
+	.tp img{
+		margin: 0 auto;
+	}
+	p a{
+		text-decoration: none;
+		color: black;
+	}
+</style>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="bj">
+  <ul class="nav">
+	<li>陆地动物
+		<div class="tanchuang">
+			<div class="top">
+			    <p>陆生动物<span>”随处可见的亲近“</span></p>
+				<div class="but"><a href="../dcwj.html" title="调查问卷导向">填写问卷</a></div>
+			</div>
+			<div class="content">
+				<div class="left">动物</div>
+				<div class="right">
+					<span><!-- InstanceBeginEditable name="猫猫" --><a href="../lsdw/maomao.html">猫猫</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="狗狗" --><a href="../lsdw/gougou.html">狗狗</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="熊猫" --><a href="../lsdw/xiongmao.html">熊猫</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="老虎" --><a href="../lsdw/laohu.html">老虎</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="狮子" --><a href="../lsdw/shizi.html">狮子</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="恐龙" --><a href="../lsdw/konglong.html">恐龙</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="大象" --><a href="../lsdw/daxiang.html">大象</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="豹子" --><a href="../lsdw/baozi.html">豹子</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="走禽" --><a href="../lsdw/zouqin.html">走禽</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="人类" --><a href="../lsdw/rl.html">人类</a><!-- InstanceEndEditable --></span>
+				</div>
+				
+				<div class="left">陆生百科</div>
+				<div class="right">
+					<span><a href="../lsdw/lsbk_jdjs.html">简单介绍</a></span>
+					<span><!-- InstanceBeginEditable name="发展历史" --><a href="../lsdw/fazhanlishi.html">发展历史</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="身体构造" --><a href="../lsdw/shentigouzao.html">身体构造</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="特征" --><a href="../lsdw/tezheng.html">特征</a><!-- InstanceEndEditable --></span>
+				</div>
+			</div>
+		</div>
+	</li>
+	<li>海洋动物
+	  <div class="tanchuang">
+			<div class="top">
+			    <p>海洋动物<span>”倾听自然的声音“</span></p>
+				<div class="but"><a href="../dcwj.html" title="调查问卷导向">填写问卷</a></div>
+			</div>
+			<div class="content">
+				<div class="left">动物</div>
+				<div class="right">
+					<span><!-- InstanceBeginEditable name="海蜇" --><a href="../hydw/haizhe.html">海蜇</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="鲨鱼" --><a href="../hydw/shayu.html">鲨鱼</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="鱼类" --><a href="../hydw/yulei.html">鱼类</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="河豚" --><a href="../hydw/hetun.html">河豚</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="海蛇" --><a href="../hydw/haishe.html">海蛇</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="蓑鲉" --><a href="../hydw/yuanyou.html">蓑鲉</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="刺鳐" --><a href="../hydw/ciyao.html">刺鳐</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="海狮" --><a href="../hydw/haishi.html">海狮</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="海鳗" --><a href="../hydw/haiman.html">海鳗</a><!-- InstanceEndEditable --></span>
+				</div>
+				
+				<div class="left">海生百科</div>
+				<div class="right">
+					<span><!-- InstanceBeginEditable name="简单介绍" --><a href="../hydw/hysw_jdjs.html">简单介绍</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="生物种类" --><a href="../hydw/hydw_swzl.html">生物种类</a><!-- InstanceEndEditable --></span>
+				</div>
+			 </div>
+		  </div>
+	</li>
+	<li>爬行动物
+	  <div class="tanchuang">
+			<div class="top">
+			    <p>爬行动物<span>”迅捷而敏锐“</span></p>
+				<div class="but"><a href="../dcwj.html" title="调查问卷导向">填写问卷</a></div>
+			</div>
+			<div class="content">
+				<div class="left">动物</div>
+				<div class="right">
+					<span><!-- InstanceBeginEditable name="龙类" --><a href="../pxdw/longlei.html">龙类</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="龟类" --><a href="../pxdw/guilei.html">龟类</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="鳄类" --><a href="../pxdw/elei.html">鳄类</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="蜥类" --><a href="../pxdw/xilei.html">蜥类</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="蛇类" --><a href="../pxdw/shelei.html">蛇类</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="螈类" --><a href="../pxdw/yuanlei.html">螈类</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="两栖" --><a href="../pxdw/liangqi.html">两栖</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="蟾蜍" --><a href="../pxdw/chanchu.html">蟾蜍</a><!-- InstanceEndEditable --></span>
+				</div>
+				
+				<div class="left">爬行纲</div>
+				<div class="right">
+					<span><!-- InstanceBeginEditable name="动物学史" --><a href="../pxdw/pxdw_dwxs.html">动物学史</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="形态特征" --><a href="../pxdw/pxdw_xttz.html">形态特征</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="生活习性" --><a href="../pxdw/pxdw_shxx.html">生活习性</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="生长繁衍" --><a href="../pxdw/pxdw_szfy.html">生长繁衍</a><!-- InstanceEndEditable --></span>
+				</div>
+			 </div>
+	  </div>
+	</li>
+	<li>珍稀物种
+		<div class="tanchuang">
+			<div class="top">
+			    <p>珍惜物种<span>”保护属于我们仅存的良知“</span></p>
+				<div class="but"><a href="../dcwj.html" title="调查问卷导向">填写问卷</a></div>
+			</div>
+			<div class="content">
+				<div class="left">动物</div>
+				<div class="right">
+					<span><!-- InstanceBeginEditable name="灰狼" --><a href="huilang.html">灰狼</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="貉" --><a href="luo.html">貉</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="大熊猫" --><a href="daxiongmao.html">大熊猫</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="猞猁" --><a href="sheli.html">猞猁</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="藏羚羊" --><a href="zanglingyang.html">藏羚羊</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="虎鲸" --><a href="hujing.html">虎鲸</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="江豚" --><a href="jiangtun.html">江豚</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="白鹤" --><a href="baihe.html">白鹤</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="秃鹫" --><a href="tujiu.html">秃鹫</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="燕隼" --><a href="yansun.html">燕隼</a><!-- InstanceEndEditable --></span>
+				</div>
+				
+				<div class="left">概念</div>
+				<div class="right">
+					<span><!-- InstanceBeginEditable name="意义" --><a href="yiyi.html">意义</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="责任" --><a href="zeren.html">责任</a><!-- InstanceEndEditable --></span>
+					<span><!-- InstanceBeginEditable name="负担" --><a href="fudan.html">负担</a><!-- InstanceEndEditable --></span>
+				</div>
+			 </div>
+	  </div>
+	</li>
+	<li><a href="../dcwj.html">宠物领养</a></li>
+  </ul>	
+</div>
+<div class="banner"></div>
+<!-- InstanceBeginEditable name="编辑新内容" -->
+	<div class="kuang">
+	<div class="smallbj">
+	    <div class="shiyi"></div>
+		<div class="TXT">保护动物<span>由于人类的破坏，与栖息地的丧失等因素，地球上濒临灭绝生物的比例正在以惊人的速度增长。在工业社会以前，鸟类平均每300年灭绝一种，兽类平均每8000年灭绝一种；但是自从工业社会以来，地球物种灭绝的速度已经超出自然灭绝率的1000倍。全世界1/8的植物，1/4的哺乳动物，1/9的鸟类，1/5的爬行动物，1/4的两栖动物，1/3的鱼类，都濒临灭绝。所以保护动物刻不容缓，全世界都在号召保护动物。动物保护的核心内容是禁止虐待、残害任何动物，禁止猎杀和捕食野生动物。</span></div>
+		<div class="tp"><img src="../../img/保护动物/保护.jpg" width="400" height="520" alt=""></div>
+	</div>
+</div>
+
+<!-- InstanceEndEditable -->
+	
+
+	
+	
+<!----------------------------------------- claa we ------------------------------------------------>
+	
+<div class="callwe">
+	<div class="tittel">联系我们</div>
+	<div class="callwebox">
+		<div>
+			<img src="../../img/主页/地址.jpg" width="50%" height="40%" alt=""/>
+		    <p>ADRESS</p>
+			<span>地址：乌兰察布职业学院</span>
+		</div>
+		<div>
+			<img src="../../img/主页/电话.jpg" width="50%" height="40%" alt=""/>
+		    <p>TELL</p>
+			<span>电话：156********2542</span>
+		</div>
+	    <div>
+			<img src="../../img/主页/邮件.jpg" width="50%" height="40%" alt=""/>
+		    <p>MESSAGE</p>
+			<span>邮箱：*******6726@163.com</span>
+		</div>
+	</div>
+	<div class="zhici">
+		<p align="center" style="font-family: '微软雅黑'; color: #333333; font-size: 18px;" >欢迎随时联系我们</p>
+	</div>
+</div>
+<p style="text-align: right"><a href="../index.html">返回主页</a></p>
+<!----------------------------------------版权以及收尾分割-------------------------------------------->
+<div class="fenge">
+<p>&copy;乌职院20级计应一班——李明骏</p>
+</div>
+</body>
+<!-- InstanceEnd --></html>

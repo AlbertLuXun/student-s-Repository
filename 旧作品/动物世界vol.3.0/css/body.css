@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	width: 1200px;
+	color: #666;
+	font-size: 12px;
+	line-height: 2em;
+	text-indent: 2em;
+	font-family: "微软雅黑";
+}
+h1，h2，p {
+	margin: 0px;
+	padding: 0px;
+}
